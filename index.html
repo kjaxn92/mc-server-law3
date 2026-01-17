@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刑事法典 - サーバー法典アーカイブ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #ffffff;
+            color: #1a202c;
+            line-height: 1.8;
+        }
+
+        .serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        .container-custom {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 50px 70px;
+        }
+
+        /* Criminal Law Theme Color: Crimson */
+        .law-header {
+            text-align: center;
+            border-bottom: 4px solid #991b1b;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+        }
+
+        .law-header h1 {
+            color: #991b1b;
+            letter-spacing: 0.2em;
+        }
+
+        .law-section-title {
+            background-color: #991b1b;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.8rem;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .chapter-title {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-bottom: 1px solid #fee2e2;
+            padding-bottom: 8px;
+            color: #7f1d1d;
+        }
+
+        .article {
+            margin-bottom: 30px;
+        }
+
+        .article-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            color: #111827;
+        }
+
+        .article-content {
+            font-size: 1rem;
+            padding-left: 1.25rem;
+            border-left: 2px solid #ef4444;
+            text-align: justify;
+        }
+
+        .toc {
+            background-color: #fef2f2;
+            padding: 30px;
+            border-radius: 4px;
+            margin-bottom: 40px;
+            border: 1px solid #fee2e2;
+        }
+
+        @media (max-width: 640px) {
+            .container-custom {
+                margin: 0;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-custom">
+        <header class="law-header">
+            <h1 class="text-4xl font-bold serif">第三部 刑事法</h1>
+            <p class="text-gray-500 mt-2 tracking-widest uppercase text-xs">Criminal & Procedural Law</p>
+        </header>
+
+        <nav class="toc">
+            <h2 class="font-bold mb-4 border-b border-red-200 pb-2">目次</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                <div>
+                    <h3 class="font-bold text-red-800 mb-2">【 刑法 】</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#penal-1" class="hover:underline">第一編 総則</a></li>
+                        <li><a href="#penal-2" class="hover:underline">第二編 犯罪</a></li>
+                        <li><a href="#penal-3" class="hover:underline">第三編 執行・補則</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-red-800 mb-2">【 刑事訴訟法 】</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#proc-1" class="hover:underline">第一章 総則</a></li>
+                        <li><a href="#proc-2" class="hover:underline">第二章 通報・捜査</a></li>
+                        <li><a href="#proc-3" class="hover:underline">第三章 拘束・処分</a></li>
+                        <li><a href="#proc-4" class="hover:underline">第四章 裁判</a></li>
+                        <li><a href="#proc-5" class="hover:underline">第五章 執行</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 刑法セクション -->
+        <h2 id="penal" class="law-section-title serif">刑法</h2>
+
+        <section id="penal-1">
+            <h2 class="chapter-title">第一編　総則</h2>
+            <div class="article">
+                <span class="article-title">第1条（目的）</span>
+                <p class="article-content">この法律は、犯罪及び刑罰を定め、秩序あるサーバー運営を確保することを目的とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第2条（適用範囲）</span>
+                <p class="article-content">この法律は、サーバー内で行われたすべての犯罪行為に適用する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第3条（罪刑法定主義）</span>
+                <p class="article-content">法律により犯罪と定められていない行為は、これを処罰することができない。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第4条（責任主義）</span>
+                <p class="article-content">故意又は過失がない行為については、処罰しない。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第5条（刑の種類）</span>
+                <p class="article-content">刑は、懲役、罰金、永久BAN、噴水刑その他法律の定める刑とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第6条（刑の併科）</span>
+                <p class="article-content">一の犯罪について、懲役及び罰金その他の刑を併科することができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第7条（自首減刑）</span>
+                <p class="article-content">犯罪を犯した者が、自主的に申告し、被害の回復に協力したときは、その刑を減軽することができる。</p>
+            </div>
+        </section>
+
+        <section id="penal-2">
+            <h2 class="chapter-title">第二編　犯罪</h2>
+            <div class="article">
+                <span class="article-title">第8条（国家転覆罪）</span>
+                <p class="article-content">国の統治機構を破壊し、又はその機能を著しく妨害する目的で行為をした者は、懲役又は永久BANに処する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第9条（不正通貨発行罪）</span>
+                <p class="article-content">法令又は正当な権限に基づかず、国の通貨を発行し、生成し、複製し、又はこれに準ずる行為をした者は、懲役又は罰金に処する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第10条（窃盗罪）</span>
+                <p class="article-content">他人の管理する物品を不法に取得した者は、懲役又は罰金に処する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第11条（詐欺罪）</span>
+                <p class="article-content">虚偽の表示その他欺く行為により、財産上の利益を得た者は、懲役又は罰金に処する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第12条（器物損壊罪）</span>
+                <p class="article-content">他人の物品又は施設を損壊した者は、懲役又は罰金に処する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第13条（グリーフィング罪）</span>
+                <p class="article-content">正当な理由なく、建築物、公共施設又は他人の活動を妨害し、サーバーの秩序を乱した者は、懲役又は永久BANに処する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第14条（職権濫用罪）</span>
+                <p class="article-content">公務に従事する者が、その職権を濫用し、他人に損害を与えたときは、懲役又は罰金に処する。</p>
+            </div>
+        </section>
+
+        <section id="penal-3">
+            <h2 class="chapter-title">第三編　刑の執行及び補則</h2>
+            <div class="article">
+                <span class="article-title">第15条（永久BAN）</span>
+                <p class="article-content">永久BANは、サーバーへの恒久的なアクセス禁止を内容とする刑とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第16条（噴水刑）</span>
+                <p class="article-content">噴水刑は、一定期間、公開の場において噴水等の視覚的制裁を課す刑とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第17条（刑の執行）</span>
+                <p class="article-content">刑の執行は、刑事訴訟法の定める手続により行う。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第18条（未遂）</span>
+                <p class="article-content">この法律により処罰される犯罪の未遂は、これを処罰する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第19条（委任）</span>
+                <p class="article-content">この法律の施行に関し必要な事項は、別に定める。</p>
+            </div>
+        </section>
+
+        <!-- 刑事訴訟法セクション -->
+        <h2 id="procedure" class="law-section-title serif">刑事訴訟法</h2>
+
+        <section id="proc-1">
+            <h2 class="chapter-title">第一章　総則</h2>
+            <div class="article">
+                <span class="article-title">第1条（目的）</span>
+                <p class="article-content">この法律は、刑法に定める犯罪の捜査、裁判及び刑の執行に関する手続を定めることを目的とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第2条（適正手続）</span>
+                <p class="article-content">刑事手続は、公正かつ適正に行われなければならない。</p>
+            </div>
+        </section>
+
+        <section id="proc-2">
+            <h2 class="chapter-title">第二章　通報及び捜査</h2>
+            <div class="article">
+                <span class="article-title">第3条（通報）</span>
+                <p class="article-content">犯罪を認知した者は、行政機関に通報することができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第4条（捜査権限）</span>
+                <p class="article-content">行政機関は、犯罪の嫌疑があるときは、必要な範囲で捜査を行うことができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第5条（証拠の収集）</span>
+                <p class="article-content">捜査にあたっては、証拠を適正に収集しなければならない。</p>
+            </div>
+        </section>
+
+        <section id="proc-3">
+            <h2 class="chapter-title">第三章　拘束及び処分</h2>
+            <div class="article">
+                <span class="article-title">第6条（一時拘束）</span>
+                <p class="article-content">犯罪の嫌疑が明白な場合には、必要な限度で当該者を一時拘束することができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第7条（弁明の機会）</span>
+                <p class="article-content">処分に先立ち、原則として弁明の機会を与えなければならない。</p>
+            </div>
+        </section>
+
+        <section id="proc-4">
+            <h2 class="chapter-title">第四章　裁判</h2>
+            <div class="article">
+                <span class="article-title">第8条（裁判）</span>
+                <p class="article-content">犯罪の成否及び刑の内容は、適正な審理により決定する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第9条（判決）</span>
+                <p class="article-content">判決は、理由を付して行わなければならない。</p>
+            </div>
+        </section>
+
+        <section id="proc-5">
+            <h2 class="chapter-title">第五章　刑の執行</h2>
+            <div class="article">
+                <span class="article-title">第10条（執行）</span>
+                <p class="article-content">確定した判決に基づき、刑を執行する。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第11条（執行停止）</span>
+                <p class="article-content">相当な理由がある場合には、刑の執行を停止することができる。</p>
+            </div>
+        </section>
+
+        <section id="proc-6">
+            <h2 class="chapter-title">第六章　再審</h2>
+            <div class="article">
+                <span class="article-title">第12条（再審）</span>
+                <p class="article-content">新たな証拠により、判決に重大な疑義が生じたときは、再審を請求することができる。</p>
+            </div>
+        </section>
+
+        <section id="proc-7">
+            <h2 class="chapter-title">第七章　補則</h2>
+            <div class="article">
+                <span class="article-title">第13条（委任）</span>
+                <p class="article-content">この法律の施行に関し必要な事項は、命令で定める。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第14条（施行）</span>
+                <p class="article-content">この法律は、公布の日から施行する。</p>
+            </div>
+        </section>
+
+        <footer class="mt-20 pt-10 border-t border-gray-100 text-center text-gray-400 text-xs">
+            <p>&copy; Minecraft Server Legislative Archive - Criminal Division</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
